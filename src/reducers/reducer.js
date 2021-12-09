@@ -3,6 +3,8 @@ import {ERROR, SUCCESS, LOADING} from '../actions';
 const initialState = {
     loading: false,
     error: '',
+    username: 'ruxxxin',
+    platform: 'steam',
     info: {}
     
 }
