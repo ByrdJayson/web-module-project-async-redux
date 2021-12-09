@@ -4,7 +4,7 @@ function ProfileForm(props) {
     return (
         <div>
             <form>
-                <label for='username'>Username: </label>
+                <label htmlFor='username'>Username: </label>
                 <input name='username'></input>
                 <div>
                     <button value='steam'>Search on Steam</button>

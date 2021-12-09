@@ -10,7 +10,7 @@ function App(props) {
   console.log(props)
   
   useEffect(() => {
-    props.getProfile();
+    props.getProfile(props);
   },[]);
 
   return (
