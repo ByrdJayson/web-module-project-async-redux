@@ -1,12 +1,26 @@
 import React from 'react';
 import './App.css';
+import { connect } from 'react-redux';
+import { useEffect } from 'react';
+import { getProfile } from './actions';
+function App(props) {
+  console.log(props)
+  
+  useEffect(() => {
+    props.getProfile();
+  },[]);
 
-function App() {
   return (
     <div className="App">
-      Async Redux Project
+      Online Profile Lookup
     </div>
   );
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return ({
+    state
+  })
+}
+
+export default connect(mapStateToProps, { getProfile })(App);
