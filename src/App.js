@@ -3,6 +3,9 @@ import './App.css';
 import { connect } from 'react-redux';
 import { useEffect } from 'react';
 import { getProfile } from './actions';
+import Header from './components/Header';
+import ProfileForm from './components/ProfileForm';
+import Profile from './components/Profile';
 function App(props) {
   console.log(props)
   
@@ -12,7 +15,9 @@ function App(props) {
 
   return (
     <div className="App">
-      Online Profile Lookup
+      <Header/>
+      <ProfileForm/>
+      <Profile/>
     </div>
   );
 }
