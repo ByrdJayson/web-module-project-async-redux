@@ -1,6 +1,5 @@
 import axios from 'axios';
 import { connect } from 'react-redux';
-
 export const LOADING = 'LOADING';
 export const ERROR = 'ERROR';
 export const SUCCESS = 'SUCCESS';
@@ -17,6 +16,7 @@ export const getProfile = (props) => (dispatch) => {
         dispatch({type: ERROR, payload: { err }})
     })
 }
+
 
 const mapStateToProps = (state) => {
     return ({

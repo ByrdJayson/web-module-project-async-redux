@@ -1,4 +1,4 @@
-import {ERROR, SUCCESS, LOADING} from '../actions';
+import {ERROR, SUCCESS, LOADING, USERNAME_CHANGE} from '../actions';
 
 const initialState = {
     loading: false,
@@ -28,6 +28,12 @@ export const reducer = (state = initialState, action) => {
         loading: false,
         info: action.payload,
     }
+
+    case 'USERNAME_CHANGE':
+        return {
+            ...state,
+        username: action.payload
+        }
 
     default:
         return state

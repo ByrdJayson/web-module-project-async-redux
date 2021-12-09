@@ -13,6 +13,8 @@ function App(props) {
     props.getProfile(props);
   },[]);
 
+  
+
   return (
     <div className="App">
       <Header/>
